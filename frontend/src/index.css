@@ -1,0 +1,18 @@
+/* paste your font script here */
+
+@import "tailwindcss";
+
+a.active hr{
+  display: block;
+}
+
+/* add css code for all the fonts with *{} */
+
+/* paste the font here */
+
+@media (max-width:640px) {
+  a.active{
+    background-color: black;
+    color: white;
+  }
+}
