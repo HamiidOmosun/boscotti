@@ -10,6 +10,10 @@ a.active hr{
 
 /* paste the font here */
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 @media (max-width:640px) {
   a.active{
     background-color: black;
