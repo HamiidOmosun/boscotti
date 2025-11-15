@@ -1,8 +1,47 @@
+import NewsLetterBox from '../components/NewsLetterBox'
+import { assets } from '../assets/assets'
+import Title from '../components/Title'
 import React from 'react'
 
 const About = () => {
   return (
-    <div></div>
+    <div>
+      
+      <div className='text-2xl text-center pt-8 border-t'>
+          <Title text1={'ABOUT'} text2={'US'} />
+      </div>
+
+      <div className='my-10 flex flex-col md:flex-row gap-16'>
+        <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="" />
+        <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore a accusantium suscipit corrupti architecto deserunt tempora sequi nihil earum impedit dolores, commodi unde nisi molestias fuga expedita adipisci obcaecati reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto in animi ex assumenda. Voluptas similique, quod vitae explicabo reprehenderit repudiandae sequi nulla aliquid? Deleniti praesentium nisi enim neque nobis.</p>
+            <b className='text-gray-800'>Our Mission</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quae illum esse unde, impedit laudantium recusandae officia deserunt quam dolore dolorem possimus accusamus, alias sit repellat aut quidem et delectus.</p>
+        </div>
+      </div>
+
+      <div className='text-xl py-4'>
+        <Title text1={'WHY'} text2={'CHOOSE US'} />
+      </div>
+
+      <div className='flex flex-col md:flex-row text-sm mb-20'>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+            <b>Quality Assurance:</b>
+            <p className='text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi harum itaque possimus quae accusamus, ipsum consequuntur eos mollitia</p>
+        </div>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+            <b>Convenience:</b>
+            <p className='text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi harum itaque possimus quae accusamus, ipsum consequuntur eos mollitia</p>
+        </div>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+            <b>Exceptional customer service:</b>
+            <p className='text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi harum itaque possimus quae accusamus, ipsum consequuntur eos mollitia</p>
+        </div>
+      </div>
+
+      <NewsLetterBox />
+    </div>
   )
 }
 
